@@ -342,9 +342,9 @@ namespace WebBookStore.Controllers
                 var verifyUrl = "/Order/" + emailFor + "?Id_Order=" + Id_Order  /*activationCode*/;
                 var link = Request.Url.AbsoluteUri.Replace(Request.Url.PathAndQuery, verifyUrl);
 
-                var fromEmail = new MailAddress("kobikiu810@gmail.com");
+                var fromEmail = new MailAddress("user@example.com");
                 var toEmail = new MailAddress(Email);
-                var fromEmailPassword = "xeus08102001"; // replace actual password
+                var fromEmailPassword = "xxxxxxxx"; // replace actual password
                 string subject = "";
                 string body = "";
                 if (emailFor == "OrderDetailView")
